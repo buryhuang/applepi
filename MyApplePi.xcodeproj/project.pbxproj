@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC47C0181EFD66EE006143DE /* config in Resources */ = {isa = PBXBuildFile; fileRef = FC47C0161EFD66EE006143DE /* config */; };
+		FC47C0191EFD66EE006143DE /* services in Resources */ = {isa = PBXBuildFile; fileRef = FC47C0171EFD66EE006143DE /* services */; };
+		FC8473611EF5C2C300D77CB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8473601EF5C2C300D77CB3 /* AppDelegate.swift */; };
+		FC8473631EF5C2C300D77CB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8473621EF5C2C300D77CB3 /* ViewController.swift */; };
+		FC8473661EF5C2C300D77CB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8473641EF5C2C300D77CB3 /* Main.storyboard */; };
+		FC8473691EF5C2C300D77CB3 /* MyApplePi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC8473671EF5C2C300D77CB3 /* MyApplePi.xcdatamodeld */; };
+		FC84736B1EF5C2C300D77CB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC84736A1EF5C2C300D77CB3 /* Assets.xcassets */; };
+		FC84736E1EF5C2C300D77CB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC84736C1EF5C2C300D77CB3 /* LaunchScreen.storyboard */; };
+		FC8473791EF5C2C300D77CB3 /* MyApplePiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8473781EF5C2C300D77CB3 /* MyApplePiTests.swift */; };
+		FC8473841EF5C2C300D77CB3 /* MyApplePiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8473831EF5C2C300D77CB3 /* MyApplePiUITests.swift */; };
+		FC8473921EF6558A00D77CB3 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FC8473911EF6558A00D77CB3 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC8473751EF5C2C300D77CB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC8473551EF5C2C300D77CB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC84735C1EF5C2C300D77CB3;
+			remoteInfo = MyApplePi;
+		};
+		FC8473801EF5C2C300D77CB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC8473551EF5C2C300D77CB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC84735C1EF5C2C300D77CB3;
+			remoteInfo = MyApplePi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC47C0161EFD66EE006143DE /* config */ = {isa = PBXFileReference; lastKnownFileType = folder; path = config; sourceTree = "<group>"; };
+		FC47C0171EFD66EE006143DE /* services */ = {isa = PBXFileReference; lastKnownFileType = folder; path = services; sourceTree = "<group>"; };
+		FC84735D1EF5C2C300D77CB3 /* MyApplePi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApplePi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC8473601EF5C2C300D77CB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC8473621EF5C2C300D77CB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC8473651EF5C2C300D77CB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC8473681EF5C2C300D77CB3 /* MyApplePi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyApplePi.xcdatamodel; sourceTree = "<group>"; };
+		FC84736A1EF5C2C300D77CB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC84736D1EF5C2C300D77CB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC84736F1EF5C2C300D77CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC8473741EF5C2C300D77CB3 /* MyApplePiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyApplePiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC8473781EF5C2C300D77CB3 /* MyApplePiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApplePiTests.swift; sourceTree = "<group>"; };
+		FC84737A1EF5C2C300D77CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC84737F1EF5C2C300D77CB3 /* MyApplePiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyApplePiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC8473831EF5C2C300D77CB3 /* MyApplePiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApplePiUITests.swift; sourceTree = "<group>"; };
+		FC8473851EF5C2C300D77CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC8473911EF6558A00D77CB3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC84735A1EF5C2C300D77CB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC8473711EF5C2C300D77CB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC84737C1EF5C2C300D77CB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC8473541EF5C2C300D77CB3 = {
+			isa = PBXGroup;
+			children = (
+				FC47C0161EFD66EE006143DE /* config */,
+				FC47C0171EFD66EE006143DE /* services */,
+				FC84735F1EF5C2C300D77CB3 /* MyApplePi */,
+				FC8473771EF5C2C300D77CB3 /* MyApplePiTests */,
+				FC8473821EF5C2C300D77CB3 /* MyApplePiUITests */,
+				FC84735E1EF5C2C300D77CB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC84735E1EF5C2C300D77CB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC84735D1EF5C2C300D77CB3 /* MyApplePi.app */,
+				FC8473741EF5C2C300D77CB3 /* MyApplePiTests.xctest */,
+				FC84737F1EF5C2C300D77CB3 /* MyApplePiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC84735F1EF5C2C300D77CB3 /* MyApplePi */ = {
+			isa = PBXGroup;
+			children = (
+				FC8473911EF6558A00D77CB3 /* README.md */,
+				FC8473601EF5C2C300D77CB3 /* AppDelegate.swift */,
+				FC8473621EF5C2C300D77CB3 /* ViewController.swift */,
+				FC8473641EF5C2C300D77CB3 /* Main.storyboard */,
+				FC84736A1EF5C2C300D77CB3 /* Assets.xcassets */,
+				FC84736C1EF5C2C300D77CB3 /* LaunchScreen.storyboard */,
+				FC84736F1EF5C2C300D77CB3 /* Info.plist */,
+				FC8473671EF5C2C300D77CB3 /* MyApplePi.xcdatamodeld */,
+			);
+			path = MyApplePi;
+			sourceTree = "<group>";
+		};
+		FC8473771EF5C2C300D77CB3 /* MyApplePiTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC8473781EF5C2C300D77CB3 /* MyApplePiTests.swift */,
+				FC84737A1EF5C2C300D77CB3 /* Info.plist */,
+			);
+			path = MyApplePiTests;
+			sourceTree = "<group>";
+		};
+		FC8473821EF5C2C300D77CB3 /* MyApplePiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC8473831EF5C2C300D77CB3 /* MyApplePiUITests.swift */,
+				FC8473851EF5C2C300D77CB3 /* Info.plist */,
+			);
+			path = MyApplePiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC84735C1EF5C2C300D77CB3 /* MyApplePi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC8473881EF5C2C300D77CB3 /* Build configuration list for PBXNativeTarget "MyApplePi" */;
+			buildPhases = (
+				FC8473591EF5C2C300D77CB3 /* Sources */,
+				FC84735A1EF5C2C300D77CB3 /* Frameworks */,
+				FC84735B1EF5C2C300D77CB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyApplePi;
+			productName = MyApplePi;
+			productReference = FC84735D1EF5C2C300D77CB3 /* MyApplePi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC8473731EF5C2C300D77CB3 /* MyApplePiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC84738B1EF5C2C300D77CB3 /* Build configuration list for PBXNativeTarget "MyApplePiTests" */;
+			buildPhases = (
+				FC8473701EF5C2C300D77CB3 /* Sources */,
+				FC8473711EF5C2C300D77CB3 /* Frameworks */,
+				FC8473721EF5C2C300D77CB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC8473761EF5C2C300D77CB3 /* PBXTargetDependency */,
+			);
+			name = MyApplePiTests;
+			productName = MyApplePiTests;
+			productReference = FC8473741EF5C2C300D77CB3 /* MyApplePiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC84737E1EF5C2C300D77CB3 /* MyApplePiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC84738E1EF5C2C300D77CB3 /* Build configuration list for PBXNativeTarget "MyApplePiUITests" */;
+			buildPhases = (
+				FC84737B1EF5C2C300D77CB3 /* Sources */,
+				FC84737C1EF5C2C300D77CB3 /* Frameworks */,
+				FC84737D1EF5C2C300D77CB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC8473811EF5C2C300D77CB3 /* PBXTargetDependency */,
+			);
+			name = MyApplePiUITests;
+			productName = MyApplePiUITests;
+			productReference = FC84737F1EF5C2C300D77CB3 /* MyApplePiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC8473551EF5C2C300D77CB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Null;
+				TargetAttributes = {
+					FC84735C1EF5C2C300D77CB3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = WUK7X9YJF5;
+						ProvisioningStyle = Automatic;
+					};
+					FC8473731EF5C2C300D77CB3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FC84735C1EF5C2C300D77CB3;
+					};
+					FC84737E1EF5C2C300D77CB3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FC84735C1EF5C2C300D77CB3;
+					};
+				};
+			};
+			buildConfigurationList = FC8473581EF5C2C300D77CB3 /* Build configuration list for PBXProject "MyApplePi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC8473541EF5C2C300D77CB3;
+			productRefGroup = FC84735E1EF5C2C300D77CB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC84735C1EF5C2C300D77CB3 /* MyApplePi */,
+				FC8473731EF5C2C300D77CB3 /* MyApplePiTests */,
+				FC84737E1EF5C2C300D77CB3 /* MyApplePiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC84735B1EF5C2C300D77CB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC47C0181EFD66EE006143DE /* config in Resources */,
+				FC84736E1EF5C2C300D77CB3 /* LaunchScreen.storyboard in Resources */,
+				FC84736B1EF5C2C300D77CB3 /* Assets.xcassets in Resources */,
+				FC8473661EF5C2C300D77CB3 /* Main.storyboard in Resources */,
+				FC47C0191EFD66EE006143DE /* services in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC8473721EF5C2C300D77CB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC84737D1EF5C2C300D77CB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC8473591EF5C2C300D77CB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC8473631EF5C2C300D77CB3 /* ViewController.swift in Sources */,
+				FC8473691EF5C2C300D77CB3 /* MyApplePi.xcdatamodeld in Sources */,
+				FC8473921EF6558A00D77CB3 /* README.md in Sources */,
+				FC8473611EF5C2C300D77CB3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC8473701EF5C2C300D77CB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC8473791EF5C2C300D77CB3 /* MyApplePiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC84737B1EF5C2C300D77CB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC8473841EF5C2C300D77CB3 /* MyApplePiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC8473761EF5C2C300D77CB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC84735C1EF5C2C300D77CB3 /* MyApplePi */;
+			targetProxy = FC8473751EF5C2C300D77CB3 /* PBXContainerItemProxy */;
+		};
+		FC8473811EF5C2C300D77CB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC84735C1EF5C2C300D77CB3 /* MyApplePi */;
+			targetProxy = FC8473801EF5C2C300D77CB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC8473641EF5C2C300D77CB3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC8473651EF5C2C300D77CB3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC84736C1EF5C2C300D77CB3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC84736D1EF5C2C300D77CB3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC8473861EF5C2C300D77CB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC8473871EF5C2C300D77CB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC8473891EF5C2C300D77CB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WUK7X9YJF5;
+				INFOPLIST_FILE = MyApplePi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Null.MyApplePi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FC84738A1EF5C2C300D77CB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WUK7X9YJF5;
+				INFOPLIST_FILE = MyApplePi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Null.MyApplePi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FC84738C1EF5C2C300D77CB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyApplePiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Null.MyApplePiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyApplePi.app/MyApplePi";
+			};
+			name = Debug;
+		};
+		FC84738D1EF5C2C300D77CB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyApplePiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Null.MyApplePiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyApplePi.app/MyApplePi";
+			};
+			name = Release;
+		};
+		FC84738F1EF5C2C300D77CB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MyApplePiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Null.MyApplePiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MyApplePi;
+			};
+			name = Debug;
+		};
+		FC8473901EF5C2C300D77CB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MyApplePiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Null.MyApplePiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MyApplePi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC8473581EF5C2C300D77CB3 /* Build configuration list for PBXProject "MyApplePi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC8473861EF5C2C300D77CB3 /* Debug */,
+				FC8473871EF5C2C300D77CB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC8473881EF5C2C300D77CB3 /* Build configuration list for PBXNativeTarget "MyApplePi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC8473891EF5C2C300D77CB3 /* Debug */,
+				FC84738A1EF5C2C300D77CB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC84738B1EF5C2C300D77CB3 /* Build configuration list for PBXNativeTarget "MyApplePiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC84738C1EF5C2C300D77CB3 /* Debug */,
+				FC84738D1EF5C2C300D77CB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC84738E1EF5C2C300D77CB3 /* Build configuration list for PBXNativeTarget "MyApplePiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC84738F1EF5C2C300D77CB3 /* Debug */,
+				FC8473901EF5C2C300D77CB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC8473671EF5C2C300D77CB3 /* MyApplePi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC8473681EF5C2C300D77CB3 /* MyApplePi.xcdatamodel */,
+			);
+			currentVersion = FC8473681EF5C2C300D77CB3 /* MyApplePi.xcdatamodel */;
+			path = MyApplePi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FC8473551EF5C2C300D77CB3 /* Project object */;
+}
