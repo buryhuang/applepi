@@ -2,7 +2,17 @@
 
 ```
 #####################################################
+cd /Volumes/boot
+git clone https://github.com/buryhuang/applepi.git
+
+#####################################################
+cp -Rf /boot/applepi/config/etc /
+#update /etc/wpa_supplicant/wap_supplicant.conf with real WIFI ssid and password
+reboot
 apt-get install supervisor
+wget https://bootstrap.pypa.io/get-pip.py
+python get-pip.py
+pip install flask
 
 #####################################################
 http://www.elinux.org/RPI-Wireless-Hotspot
