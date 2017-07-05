@@ -8,11 +8,19 @@ git clone https://github.com/buryhuang/applepi.git
 #####################################################
 cp -Rf /boot/applepi/config/etc /
 #update /etc/wpa_supplicant/wap_supplicant.conf with real WIFI ssid and password
+ln -sf /etc/network/interfaces.pub /net/network/interfaces
 reboot
-apt-get install supervisor
+apt-get install supervisor hostapd
 wget https://bootstrap.pypa.io/get-pip.py
 python get-pip.py
 pip install flask
+systemctl enable ssh
+systemctl enable hostapd
+
+# switching to private network
+ln -sf /etc/network/interfaces.pri /net/network/interfaces
+# After reboot you can only connect to the private hotspot
+reboot 
 
 #####################################################
 http://www.elinux.org/RPI-Wireless-Hotspot
