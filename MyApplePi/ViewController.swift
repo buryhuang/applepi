@@ -10,13 +10,20 @@ import UIKit
 import Foundation
 import Photos
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var theLabel: UILabel!
+    @IBOutlet weak var theIP: UIPickerView!
+    
+    var pickerData: [String] = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        pickerData = ["192.168.42.1", "192.168.3.247", "192.168.3.248"]
+        // Connect data:
+        self.theIP.delegate = self
+        self.theIP.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,15 +31,34 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @available(iOS 2.0, *)
+    public func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+
+    // returns the number of 'columns' to display.
+    @available(iOS 2.0, *)
+    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    // returns the # of rows in each component..
+    @available(iOS 2.0, *)
+    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+
+        return pickerData.count
+    }
+
+
     @IBAction func theClick(_ sender: UIButton) {
         //let todoEndpoint: String = "https://jsonplaceholder.typicode.com/todos/1"
         //let todoEndpoint: String = "http://ec2-54-153-105-85.us-west-1.compute.amazonaws.com/todo/api/v1.0/tasks/3923100000"
         var todoEndpoint: String;
-        let targetHost : String = "192.168.42.1"
+        // let targetHost : String = "192.168.42.1"
+        let targetHost : String = self.pickerData[theIP.selectedRow(inComponent:0)]
         let baseUrlTask : String = "http://" + targetHost + "/applepi/api/v1.0/tasks/"
         
-        theLabel.text = "Sending request ..."
-        
+        theLabel.text = "Sending request to ... " + targetHost
         if (sender.titleLabel?.text == "Power Off") {
             todoEndpoint = baseUrlTask + "poweroff"
         } else if (sender.titleLabel?.text == "List") {
