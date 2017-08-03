@@ -32,6 +32,20 @@ def make_public_task(task):
             new_task[field] = task[field]
     return new_task
 
+@app.route('/transpo/api/v1.0/hts/<string:hts_id>', methods = ['GET'])
+def get_hts(hts_id):
+    response = {}
+    results = []
+    hts_id = hts_id.replace('.', '')
+    #response['result'] = [{'htsno' : hts_id, 'description' : 'tmp'}]
+    for line in htsdata:
+        if line['htsno'].replace('.','').startswith(hts_id):
+            results.append({'htsno' : line['htsno'], 'description' : line['description']})
+    if len(results) == 0:
+        results = [{'htsno' : hts_id, 'description' : 'NOT FOUND'}]
+    response['result'] = results
+    return jsonify(response)
+
 @app.route('/applepi/api/v1.0/tasks', methods=['GET'])
 def get_tasks():
     return jsonify({'tasks': tasks})
