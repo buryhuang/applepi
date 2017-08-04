@@ -1,5 +1,5 @@
 #!/usr/bin/python
-from flask import Flask, jsonify, url_for
+from flask import Flask, jsonify, url_for, request
 import json
 from pprint import pprint
 import subprocess
@@ -45,6 +45,17 @@ def get_hts(hts_id):
         results = [{'htsno' : hts_id, 'description' : 'NOT FOUND'}]
     response['result'] = results
     return jsonify(response)
+
+@app.route('/transpo/api/v1.0/shipment/create', methods = ['POST'])
+def shipment_create():
+    # format: "shipment_id": "000001"
+    body = request.get_json()
+    if "shipment_id" not in body or len(body['shipment_id'].lstrip().rstrip()) == 0:
+        return jsonify({'error' : 'Mendatory fields not present: shipment_id'}), 400
+    shipment_id = body['shipment_id'].lstrip().rstrip()
+    with open('shipments/%s.json' % shipment_id,'w') as outfile:
+        json.dump(body, outfile)
+    return jsonify(body), 201
 
 @app.route('/applepi/api/v1.0/tasks', methods=['GET'])
 def get_tasks():
