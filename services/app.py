@@ -3,6 +3,7 @@ from flask import Flask, jsonify, url_for, request
 import json
 from pprint import pprint
 import subprocess
+import os
 
 htsdata = []
 
@@ -56,6 +57,26 @@ def shipment_create():
     with open('shipments/%s.json' % shipment_id,'w') as outfile:
         json.dump(body, outfile)
     return jsonify(body), 201
+
+@app.route('/transpo/api/v1.0/shipment/query/<string:shipment_id>', methods = ['GET'])
+def shipment_query(shipment_id):
+    # format: "shipment_id": "000001"
+    shipment_id = shipment_id.lstrip().rstrip()
+    if len(shipment_id) == 0:
+        return jsonify({'error' : 'Mendatory fields is empty: shipment_id'}), 404
+    file_path = 'shipments/%s.json' % shipment_id
+    if not os.path.exists(file_path):
+        return jsonify({'error' : 'Cannot find record: %s' % shipment_id}), 404
+    body = {}
+    with open(file_path, 'r') as infile:
+        body = json.load(infile)
+    response_body = {'status' : 'CREATED', 'shipment' : body}
+    return jsonify(response_body)
+
+@app.route('/transpo/api/v1.0/shipment/list', methods=['GET'])
+def shipment_list():
+    files = next(os.walk('shipments/'))[2]
+    return jsonify({'shipments': files})
 
 @app.route('/applepi/api/v1.0/tasks', methods=['GET'])
 def get_tasks():
